@@ -34,46 +34,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		38BBDD6272FD40068D50599F /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXBuildFile; fileRef = C4C72AC731E74B43809A3EE4 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */; };
-		3A1A037A2544414FB9DE4E0A /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */ = {isa = PBXBuildFile; fileRef = 56178EBB14A74370B29275C9 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */; };
-		70AA5D80105447ECB1DBC22E /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 665569A505234E0EBBE94BF1 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */; };
-		7B67CB92B2FE4CBCB1768DFE /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXBuildFile; fileRef = C8FA2F35EED04A3EB717C9A2 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/main.cpp */; };
-		8322043D8B734605AEC10049 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */ = {isa = PBXBuildFile; fileRef = A7366DBD1BF24EED8EBBD18E /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */; };
+		38BBDD6272FD40068D50599F /* tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4C72AC731E74B43809A3EE4 /* tools.cpp */; };
+		3A1A037A2544414FB9DE4E0A /* FusionEKF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56178EBB14A74370B29275C9 /* FusionEKF.cpp */; };
+		7B67CB92B2FE4CBCB1768DFE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8FA2F35EED04A3EB717C9A2 /* main.cpp */; };
+		8322043D8B734605AEC10049 /* kalman_filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A7366DBD1BF24EED8EBBD18E /* kalman_filter.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildStyle section */
-		00442975802643ED8E4F8F16 = {
-			isa = PBXBuildStyle;
-		};
-		4D59C9B4BA3B41E5B5329D00 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		8167B38747164A8E988D909C /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		86149500CE944974BD60C013 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		EBD9A18B7F024F68942C0120 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-/* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
 		21B65E89F8294FE2932F033E /* PBXContainerItemProxy */ = {
@@ -100,14 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		56003EAA1FCD4A94884550F1 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		56178EBB14A74370B29275C9 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FusionEKF.cpp; path = src/FusionEKF.cpp; sourceTree = SOURCE_ROOT; };
+		56003EAA1FCD4A94884550F1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56178EBB14A74370B29275C9 /* FusionEKF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FusionEKF.cpp; path = src/FusionEKF.cpp; sourceTree = SOURCE_ROOT; };
 		659C702DB6154696B5D31C6A /* ExtendedKF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ExtendedKF; sourceTree = BUILT_PRODUCTS_DIR; };
-		665569A505234E0EBBE94BF1 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		986A67D435C54912B228FBB4 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A7366DBD1BF24EED8EBBD18E /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kalman_filter.cpp; path = src/kalman_filter.cpp; sourceTree = SOURCE_ROOT; };
-		C4C72AC731E74B43809A3EE4 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tools.cpp; path = src/tools.cpp; sourceTree = SOURCE_ROOT; };
-		C8FA2F35EED04A3EB717C9A2 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		665569A505234E0EBBE94BF1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		986A67D435C54912B228FBB4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A7366DBD1BF24EED8EBBD18E /* kalman_filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = kalman_filter.cpp; path = src/kalman_filter.cpp; sourceTree = SOURCE_ROOT; };
+		C4C72AC731E74B43809A3EE4 /* tools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tools.cpp; path = src/tools.cpp; sourceTree = SOURCE_ROOT; };
+		C8FA2F35EED04A3EB717C9A2 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -115,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				9795DA8442F24F85A5918AE0 /* CMake Rules */,
-				986A67D435C54912B228FBB4 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+				986A67D435C54912B228FBB4 /* CMakeLists.txt */,
 			);
 			name = ZERO_CHECK;
 			sourceTree = "<group>";
@@ -131,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4BE2A1D09ABA4CEAACEDD1A1 /* CMake Rules */,
-				56003EAA1FCD4A94884550F1 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+				56003EAA1FCD4A94884550F1 /* CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
@@ -149,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9D308BF899654BF2A3BA5E75 /* Source Files */,
-				665569A505234E0EBBE94BF1 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/CMakeLists.txt */,
+				665569A505234E0EBBE94BF1 /* CMakeLists.txt */,
 			);
 			name = ExtendedKF;
 			sourceTree = "<group>";
@@ -182,10 +147,10 @@
 		9D308BF899654BF2A3BA5E75 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				56178EBB14A74370B29275C9 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */,
-				A7366DBD1BF24EED8EBBD18E /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */,
-				C8FA2F35EED04A3EB717C9A2 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/main.cpp */,
-				C4C72AC731E74B43809A3EE4 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */,
+				56178EBB14A74370B29275C9 /* FusionEKF.cpp */,
+				A7366DBD1BF24EED8EBBD18E /* kalman_filter.cpp */,
+				C8FA2F35EED04A3EB717C9A2 /* main.cpp */,
+				C4C72AC731E74B43809A3EE4 /* tools.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -226,16 +191,12 @@
 				LastUpgradeCheck = 0830;
 			};
 			buildConfigurationList = 8423FD2D9E794ADFA017EFB5 /* Build configuration list for PBXProject "ExtendedKF" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				EBD9A18B7F024F68942C0120 /* Debug */,
-				4D59C9B4BA3B41E5B5329D00 /* Release */,
-				8167B38747164A8E988D909C /* MinSizeRel */,
-				86149500CE944974BD60C013 /* RelWithDebInfo */,
-			);
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 5849116E99A6494D921DF3B0;
 			projectDirPath = ../../;
 			projectRoot = "";
@@ -248,36 +209,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04D8AAA56CF24DAE874E3FF7 = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
-		295B56F4272D467D914BC9BE = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
-			showEnvVarsInLog = 0;
-		};
 		852C04B8A7A14D848825CA15 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,10 +238,10 @@ exit 0";
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1A037A2544414FB9DE4E0A /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp */,
-				8322043D8B734605AEC10049 /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/kalman_filter.cpp */,
-				7B67CB92B2FE4CBCB1768DFE /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/main.cpp */,
-				38BBDD6272FD40068D50599F /* /Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/src/tools.cpp */,
+				3A1A037A2544414FB9DE4E0A /* FusionEKF.cpp in Sources */,
+				8322043D8B734605AEC10049 /* kalman_filter.cpp in Sources */,
+				7B67CB92B2FE4CBCB1768DFE /* main.cpp in Sources */,
+				38BBDD6272FD40068D50599F /* tools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +273,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -351,7 +282,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
@@ -364,18 +300,26 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CPLUSPLUSFLAGS = "     -std=c++0x";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ExtendedKF;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -386,7 +330,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -395,7 +339,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -408,18 +357,29 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++0x";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++0x",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ExtendedKF;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -430,7 +390,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -439,7 +399,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
@@ -450,7 +415,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -459,7 +424,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -499,18 +469,29 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++0x";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++0x",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ExtendedKF;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -521,7 +502,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -530,7 +511,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -550,7 +536,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -559,7 +545,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Debug;
 		};
@@ -572,18 +563,29 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++0x";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++0x",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ExtendedKF;
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = MinSizeRel;
 		};
@@ -594,7 +596,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -603,7 +605,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = Release;
 		};
@@ -614,7 +621,7 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
@@ -623,7 +630,12 @@ exit 0";
 				SECTORDER_FLAGS = "";
 				SYMROOT = "/Users/kyledorman/Documents/carnd/CarND-Extended-Kalman-Filter-Project/ide_profiles/xcode";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
 			};
 			name = RelWithDebInfo;
 		};
