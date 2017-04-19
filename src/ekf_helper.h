@@ -17,7 +17,7 @@ Eigen::MatrixXd H_laser();
 
 double TimeChange(long previous_timestamp, long current_timestamp);
 
-Eigen::MatrixXd Q(double time_change, double noise_ax = 9, double noise_ay = 9);
+Eigen::MatrixXd Q(double time_change, double noise_ax, double noise_ay);
 
 Eigen::MatrixXd F(double time_change);
 

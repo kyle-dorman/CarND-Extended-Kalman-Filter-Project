@@ -140,6 +140,9 @@ int main(int argc, char* argv[]) {
     // start filtering from the second frame (the speed is unknown in the first
     // frame)
     kalman_filter = ProcessMeasurement(measurement_pack_list[k], kalman_filter);
+    cout << "measurement = " << measurement_pack_list[k].raw_measurements_ << endl;
+    cout << "x_ = " << kalman_filter.X() << endl;
+    cout << "P_ = " << kalman_filter.P() << endl;
 
     // output the estimation
     out_file_ << kalman_filter.X()(0) << "\t";

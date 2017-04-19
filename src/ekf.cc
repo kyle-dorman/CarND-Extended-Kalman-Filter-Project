@@ -20,7 +20,7 @@ inline KalmanFilter ProcessMeasurement(MeasurementPackage &measurement_pack, Kal
 
   KalmanFilter prediction = ekf_helper::Predict(kalman_filter, 
     ekf_helper::F(ekf_helper::TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)),
-    ekf_helper::Q(ekf_helper::TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)));
+    ekf_helper::Q(ekf_helper::TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_), 9, 9));
 
   if (measurement_pack.sensor_type_ == MeasurementPackage::RADAR) {
     VectorXd x = kalman_filter.X();
