@@ -8,6 +8,9 @@
 #include "ground_truth_package.h"
 #include "measurement_package.h"
 
+#include "FunctionalEKF.h"
+#include "FunctionalKalmanFilter.h"
+
 using namespace std;
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
@@ -126,6 +129,7 @@ int main(int argc, char* argv[]) {
 
   // Create a Fusion EKF instance
   FusionEKF fusionEKF;
+  FunctionalKalmanFilter kalman_filter = FunctionalKalmanFilter();
 
   // used to compute the RMSE later
   vector<VectorXd> estimations;
@@ -136,13 +140,14 @@ int main(int argc, char* argv[]) {
   for (size_t k = 0; k < N; ++k) {
     // start filtering from the second frame (the speed is unknown in the first
     // frame)
+    kalman_filter = FunctionalEKF::processMeasurement(measurement_pack_list[k], kalman_filter);
     fusionEKF.ProcessMeasurement(measurement_pack_list[k]);
 
     // output the estimation
-    out_file_ << fusionEKF.ekf_.x_(0) << "\t";
-    out_file_ << fusionEKF.ekf_.x_(1) << "\t";
-    out_file_ << fusionEKF.ekf_.x_(2) << "\t";
-    out_file_ << fusionEKF.ekf_.x_(3) << "\t";
+    out_file_ << kalman_filter.getX()(0) << "\t";
+    out_file_ << kalman_filter.getX()(1) << "\t";
+    out_file_ << kalman_filter.getX()(2) << "\t";
+    out_file_ << kalman_filter.getX()(3) << "\t";
 
     // output the measurements
     if (measurement_pack_list[k].sensor_type_ == MeasurementPackage::LASER) {
@@ -163,7 +168,7 @@ int main(int argc, char* argv[]) {
     out_file_ << gt_pack_list[k].gt_values_(2) << "\t";
     out_file_ << gt_pack_list[k].gt_values_(3) << "\n";
 
-    estimations.push_back(fusionEKF.ekf_.x_);
+    estimations.push_back(kalman_filter.getX());
     ground_truth.push_back(gt_pack_list[k].gt_values_);
   }
 
