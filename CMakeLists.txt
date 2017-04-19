@@ -6,6 +6,7 @@ add_definitions(-std=c++0x)
 
 set(sources
     src/ekf.cc
+    src/ekf_helper.cpp
     src/kalman_filter.cpp
     src/main.cpp
     src/tools.cpp)

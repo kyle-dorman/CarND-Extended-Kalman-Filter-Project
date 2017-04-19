@@ -1,4 +1,4 @@
-#include "ekf_helper.cc"
+#include "ekf_helper.h"
 #include "kalman_filter.h"
 #include "Eigen/Dense"
 #include <iostream>
@@ -6,37 +6,37 @@
 #include "measurement_package.h"
 
 using namespace std;
-using namespace ekf_helper;
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
 
 namespace ekf {
 
-KalmanFilter ProcessMeasurement(MeasurementPackage &measurement_pack, KalmanFilter &kalman_filter)
+inline KalmanFilter ProcessMeasurement(MeasurementPackage &measurement_pack, KalmanFilter &kalman_filter)
 {
   if (kalman_filter.IsInitialized() == false)
   {
-    return Initialize(measurement_pack);
+    return ekf_helper::Initialize(measurement_pack);
   }
 
-  KalmanFilter prediction = Predict(kalman_filter, 
-    F(TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)),
-    Q(TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)));
+  KalmanFilter prediction = ekf_helper::Predict(kalman_filter, 
+    ekf_helper::F(ekf_helper::TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)),
+    ekf_helper::Q(ekf_helper::TimeChange(kalman_filter.Timestamp(), measurement_pack.timestamp_)));
 
   if (measurement_pack.sensor_type_ == MeasurementPackage::RADAR) {
-    return UpdateKalmanFilterWithError(kalman_filter, 
-      ExtendedKalmanError(measurement_pack.raw_measurements_, kalman_filter.X()), 
-      Hj(measurement_pack.raw_measurements_[0], measurement_pack.raw_measurements_[1],
-        measurement_pack.raw_measurements_[2], measurement_pack.raw_measurements_[3]), 
+    VectorXd x = kalman_filter.X();
+
+    return ekf_helper::UpdateKalmanFilterWithError(kalman_filter, 
+      ekf_helper::ExtendedKalmanError(measurement_pack.raw_measurements_, kalman_filter.X()), 
+      ekf_helper::Hj(x[0], x[1], x[2], x[3]), 
       kalman_filter.P(), 
-      R_radar());
+      ekf_helper::R_radar());
   } else
   {
-    return UpdateKalmanFilterWithError(kalman_filter, 
-      KalmanError(measurement_pack.raw_measurements_, H_laser(), kalman_filter.X()), 
-      H_laser(), 
+    return ekf_helper::UpdateKalmanFilterWithError(kalman_filter, 
+      ekf_helper::KalmanError(measurement_pack.raw_measurements_, ekf_helper::H_laser(), kalman_filter.X()), 
+      ekf_helper::H_laser(), 
       kalman_filter.P(), 
-      R_laser());
+      ekf_helper::R_laser());
   }
 }
 

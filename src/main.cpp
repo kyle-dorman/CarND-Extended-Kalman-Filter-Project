@@ -8,6 +8,7 @@
 #include "ground_truth_package.h"
 #include "measurement_package.h"
 #include "tools.h"
+#include "ekf_helper.h"
 
 using namespace std;
 using namespace ekf;

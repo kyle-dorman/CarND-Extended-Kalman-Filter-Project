@@ -1,4 +1,5 @@
 #include "kalman_filter.h"
+#include "ekf_helper.h"
 #include "Eigen/Dense"
 #include <iostream>
 #include <math.h>
@@ -68,7 +69,7 @@ double TimeChange(long previous_timestamp, long current_timestamp)
   return (current_timestamp - previous_timestamp) / 1000000.0;
 }
 
-MatrixXd Q(double time_change, double noise_ax = 9, double noise_ay = 9)
+MatrixXd Q(double time_change, double noise_ax, double noise_ay)
 {
   MatrixXd Q = MatrixXd(4, 4);
   double t2 = time_change * time_change;
